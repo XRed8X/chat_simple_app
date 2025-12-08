@@ -1,0 +1,25 @@
+*.dart linguist-language=Dart
+
+pubspec.yaml linguist-detectable=true
+pubspec.lock linguist-detectable=true
+
+*.g.dart linguist-generated=true
+*.freezed.dart linguist-generated=true
+*.mocks.dart linguist-generated=true
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.woff linguist-vendored
+*.woff2 linguist-vendored
+
+* text=auto
+*.swift text eol=lf
+*.cc text eol=lf
+*.h text eol=lf
+*.cmake text eol=lf
+*.lock text eol=lf
