@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:chat_simple_app/src/providers/chat_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:chat_simple_app/src/backend/entities/message.dart';
 
 class MyMessageBubble extends StatelessWidget {
-  const MyMessageBubble({super.key});
+  final Message message;
+
+  const MyMessageBubble({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,7 @@ class MyMessageBubble extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Lorem ipsum dolor sit amet.',
+              '${message.text}',
               style: TextStyle(color: Colors.white),
             ),
           ),
